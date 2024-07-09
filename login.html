@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Normalize css file -->
+    <link rel="stylesheet" href="./Css1/Normalize.css">
+    <!-- Fontawesome css file -->
+    <link rel="stylesheet" href="./fontawesome/css/font-awesome.min.css">
+    <!-- Main css file -->
+    <link rel="stylesheet" href="./index.css">
+    <!-- Javascript -->
+    <script src="/login.js"></script>
+    <title>XLearn(login)</title>
+</head>
+<body>
+    <div class="parent-container">
+        <div class="box-container">
+            <nav>
+                <ul class="nav-list">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+                <div class="second-ul">
+                    <ul class="js-1">
+                        <div class="dropdown">
+                            <div class="select">
+                                <span class="selected">English</span>
+                                <div class="caret"></div>
+                            </div>
+                            <ul class="menu">
+                                <li class="active">English</li>
+                                <li>Arabic</li>
+                                <li>French</li>
+                                <li>Deutsch</li>
+                            </ul>
+                        </div>
+                    </ul>
+                    <ul class="js-2">
+                        <li class="sign-in"><p>Sign in</p></li>
+                        <li class="reg"><a href="./register.html">Register</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="content-container">
+                <div class="para">
+                    <p class="content">
+                        Your Future Begins From Here 
+                    </p>
+                    <p class="register">
+                        If you don't have an account you can <a href="">Register Here!</a>
+                    </p>
+                </div>
+                <div class="img-container">
+                    <img src="./Object/girl.png" alt="">
+                </div>
+                <div class="switch-logging-container-login">
+                    <div class="switch-user">
+                        <!-- <p>Student</p> -->
+                        <div class="switchContainer" onclick="toggleFunction()">
+                            <div class="bullet"></div>
+                        </div>
+                        <p class="user">Student</p>
+                    </div>
+                    <div class="login-container">
+                        <div class="input-container">
+                            <input type="text" required="required">
+                            <span>Username</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="password" required="required">
+                            <span>Password</span>
+                        </div>
+                        <div class="recover-pass">
+                            <p>Forget password?</p>
+                        </div>
+                        <a class="sign-in-bottom" href="./studentDashboard.html">
+                            <input type="button">
+                            <span>Login</span>
+                        </a>
+                        <div class="other-option">
+                            <span>Continue with</span>
+                        </div>
+                        <div class="logging-options">
+                            <div class="google"><img class="google-ic" src="./Object/google.svg"></div>
+                            <div class="linked"><img class="linked-ic" src="./Object/linkedin.svg"></div>
+                            <div class="face"><img class="face-ic" src="./Object/facebook.svg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Javascript file -->
+    <script src="./register.js"></script>
+</body>
+</html>

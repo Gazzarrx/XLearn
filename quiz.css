@@ -1,0 +1,209 @@
+/* Start global rules */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family:kanit;
+    src: url('./Fonts/Work-Sans/WorkSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: open-sans;
+    src: url('./Fonts/Open-sans/OpenSans-Regular.ttf');
+    src: url('./Fonts/Open-sans/OpenSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: open2;
+    src: url('./Fonts/Open-sans/OpenSans-Regular.ttf');
+}
+@font-face {
+    font-family:poppins-medium;
+    src:url('./Fonts/Poppins/Poppins-Medium.ttf')
+}
+@font-face {
+    font-family:poppins;
+    src:url('./Fonts/Poppins/Poppins-Regular.ttf')
+}
+@font-face {
+    font-family:poppins-light;
+    src:url('./Fonts/Poppins/Poppins-Light.ttf');
+}
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root{
+    /* Colors */
+    --body-color:#eaf0f7;
+    --sidebar-color:#fff;
+    --primary-color:#4461F2;
+    --primary-color-light:#eaf0f7;
+    --toggle-color:#ddd;
+    --text-color:#707070;
+    /* Transition */
+    --tran-02:all 0.2s ease;
+    --tran-03:all 0.3s ease;
+    --tran-04:all 0.4s ease;
+    --tran-05:all 0.5s ease;
+}
+body {
+    height:100vh;
+    font-family:poppins;
+    background:var(--body-color);
+    transition:var(--tran-03);
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    overflow:scroll;
+    padding:20px;
+}
+
+ul {
+    list-style: none;
+}
+
+/* End Global rules */
+/* Start Quiz */
+
+body .container {
+    width:100%;
+    height:100%;
+    margin: 0 auto;
+}
+body .quiz-header {
+    border-top:20px solid var(--primary-color);
+}
+.container .quiz {
+    width:900px;
+    height:auto;
+    border-radius:20px;
+    padding:25px;
+    background: var(--sidebar-color);
+    margin: 0 auto;
+    margin-top:30px;
+    box-shadow: 0px 10px 10px var(--toggle-color);
+}
+.quiz-header .answers-container {
+    margin-top:50px;
+    list-style:none;
+    font-family:poppins;
+    font-size:20px;
+}
+.answers-container li {
+    margin-bottom:15px;
+}
+.quiz-parent-container span {
+    font-size:20px;
+    font-family:poppins-light;
+}
+.container .quiz-verification {
+    height:410px;
+}
+.quiz-verification .quiz-text {
+    margin-bottom:60px;
+}
+.quiz-verification .verify-container {
+    position:relative;
+    width:100%;
+    height:auto;
+}
+.quiz-verification h1 {
+    font-family:poppins-light;
+}
+.quiz-verification .email-container{
+    width:400px;
+    position:relative;
+    margin-bottom:45px;
+}
+.email-container input {
+    width:350px;
+    height:40px;
+    padding:0px;
+    outline:none;
+    border:none;
+    border-bottom:2px solid var(--primary-color);
+    font-family:poppins;
+    font-size:16px;
+    transition:var(--tran-04);
+}
+.email-container span {
+    position:absolute;
+    left:0px;
+    top:7px;
+    color:#000;
+    font-family:poppins-medium;
+    font-size:17px;
+    letter-spacing: 0.1em;
+    transition:var(--tran-04);
+}
+.email-container input:valid ~ span,
+.email-container input:focus ~ span {
+    color:#4461F2;
+    transform:translateX(10px) translateY(-7px);
+    font-size:14px;
+    font-family:poppins-medium;
+    /* padding:0 10px; */
+    background:transparent;
+    z-index:2;
+    top:-10px;
+    left:-11px;
+    letter-spacing: 0em;
+}
+.next-button {
+    width:120px;
+    height:40px;
+    position:absolute;
+    right:20px;
+    margin-top:30px;
+    color:var(--sidebar-color);
+    font-family:poppins-medium;
+    border-radius:20px;
+    box-shadow: 0px 5px 5px var(--toggle-color);
+}
+.next-button input {
+    width:100%;
+    height:100%;
+    border-radius:20px;
+    border:none;
+    outline: none;
+    background:var(--primary-color);
+}
+.next-button span {
+    position:absolute;
+    left:29.5px;
+    top:8px;
+}
+/* End Quiz */

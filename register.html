@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Normalize css file -->
+    <link rel="stylesheet" href="./Css1/Normalize.css">
+    <!-- Fontawesome css file -->
+    <link rel="stylesheet" href="./fontawesome/css/font-awesome.min.css">
+    <!-- Main css file -->
+    <link rel="stylesheet" href="./index.css">
+    <title>XLearn(register)</title>
+</head>
+<body>
+    <div class="parent-container">
+        <div class="box-container-register">
+            <nav>
+                <ul class="nav-list">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+                <div class="second-ul">
+                    <ul class="js-1">
+                        <div class="dropdown">
+                            <div class="select">
+                                <span class="selected">English</span>
+                                <div class="caret"></div>
+                            </div>
+                            <ul class="menu">
+                                <li class="active">English</li>
+                                <li>Arabic</li>
+                                <li>French</li>
+                                <li>Deutsch</li>
+                            </ul>
+                        </div>
+                    </ul>
+                    <ul class="js-2">
+                        <li class="sign-in-register"><a href="./login.html">Sign in</a></li>
+                        <li class="register"><p>Register</p></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="content-container">
+                <div class="para">
+                    <p class="content">
+                        Your Future Begins From Here 
+                    </p>
+                    <p class="register">
+                        If you already have an account you can <a href="">Sign in Here!</a>
+                    </p>
+                </div>
+                <div class="img-container">
+                    <img src="./Object/girl.png" alt="">
+                </div>
+                <div class="switch-logging-container-register">
+                    <div class="switch-user">
+                        <!-- <p>Student</p> -->
+                        <div class="switchContainer" onclick="toggleFunction()">
+                            <div class="bullet"></div>
+                        </div>
+                        <p class="user">Student</p>
+                    </div>
+                    <div class="register-container">
+                        <div class="input-container">
+                            <input type="text" required="required">
+                            <span>Firstname</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="text" required="required">
+                            <span>Lastname</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="email" required="required">
+                            <span>Email</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="password" required="required">
+                            <span>Password</span>
+                        </div>
+                        <a class="sign-in-bottom" href="./login.html">
+                            <input type="button">
+                            <span>Sign Up</span>
+                        </a>
+                        <div class="other-option-register">
+                            <span>Continue with</span>
+                        </div>
+                        <div class="logging-options-register">
+                            <div class="google"><img class="google-ic" src="./Object/google.svg"></div>
+                            <div class="linked"><img class="linked-ic" src="./Object/linkedin.svg"></div>
+                            <div class="face"><img class="face-ic" src="./Object/facebook.svg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Javascript file -->
+    <script src="./register.js"></script>
+</body>
+</html>

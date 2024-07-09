@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./studentDashboard.css">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="./fontawesome/css/font-awesome.min.css">
+    <!-- JavaScript -->
+    <script src="./studentDashboard.js"></script>
+    <title>XLearn(Dashboard-student)</title>
+</head>
+
+<body>
+    <nav class="sidebar">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <div class="img"></div>
+                </span>
+                <div class="text header-text">
+                    <span class="name">Mariam hazem</span>
+                    <span class="profession">Student</span>
+                </div>
+            </div>
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="searchbox">
+                    <a href="#">
+                        <i class='bx bx-search-alt-2 icon'></i>
+                        <input type="search" placeholder="Search...">
+                    </a>
+                </li>
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#" class="active">
+                            <i class='bx bx-home-alt icon'></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="./profile(student).html">
+                            <i class='bx bx-user-circle icon'></i>
+                            <span class="text nav-text">Profile</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-book-bookmark icon'></i>
+                            <span class="text nav-text">Courses</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-briefcase-alt-2 icon'></i>
+                            <span class="text nav-text">Quizez</span>
+                        </a>
+                    </li>
+                    <!-- <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-face icon'></i>
+                            <span class="text nav-text">Students</span>
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="bottom-content">
+                <li class="nav-link">
+                    <a href="./login.html">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+                <li class="mode">
+                    <div class="moon-sun">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark Mode</span>
+                    <div class="toggle-switch">
+                        <span class="switch">
+
+                        </span>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </nav>
+    <div class="dashboard-content-container">
+        <div class="weekly-bullets">
+            <div class="bullet-container courses">
+                <i class='bx bx-book-bookmark icon'></i>
+                <p>Courses</p>
+                <span>5</span>
+            </div>
+            <div class="bullet-container classes">
+                <i class='bx bx-door-open icon'></i>
+                <p>Classes</p>
+                <span>8</span>
+            </div>
+            <!-- <div class="bullet-container lectures">
+                <i class='bx bx-clipboard icon'></i>
+                <p>Lectures</p>
+                <span>5</span>
+            </div> -->
+            <div class="bullet-container labs">
+                <i class='bx bxs-flask icon'></i>
+                <p>Labs</p>
+                <span>3</span>
+            </div>
+        </div>
+        <div class="student-quiz-container">
+            <ul class="course-container">
+                <li class="course">
+                    <div class="text">
+                        <div class="title">Artificial Intelligence</div>
+                        <div class="teacher">Mohamed Fawzy</div>
+                    </div>
+                    <div class="info-teacher">
+                        <div class="img-1"></div>
+                    </div>
+                    <div class="recents">
+                        <span>Due Today</span>
+                        <a href="./quiz.html">11:59 PM - Quiz(2)</a>
+                    </div>
+                </li>
+                <li class="course">
+                    <div class="text-2">
+                        <div class="title">Software Engineering</div>
+                        <div class="teacher">Farida Ezat</div>
+                    </div>
+                    <div class="info-teacher">
+                        <div class="img-2"></div>
+                    </div>
+                    <div class="recents">
+                        <span>Due Today</span>
+                        <a href="">1:00 PM - Lab Project</a>
+                    </div>
+                </li>
+                <li class="course">
+                    <div class="text-3">
+                        <div class="title">Object Oriented Programming</div>
+                        <div class="teacher">Sara Ismaiel</div>
+                    </div>
+                    <div class="info-teacher">
+                        <div class="img-3"></div>
+                    </div>
+                    <div class="recents">
+                        <span>Due tommorow</span>
+                        <a href="">11:59 PM - Assignment(1)</a>
+                    </div>
+                </li>
+                <li class="course">
+                    <div class="text-4">
+                        <div class="title">User Interface</div>
+                        <div class="teacher">Hesham Osman</div>
+                    </div>
+                    <div class="info-teacher">
+                        <div class="img-4"></div>
+                    </div>
+                    <div class="recents">
+                        <span>Due tommorow</span>
+                        <a href="">3:00 PM - Online Lecture</a>
+                    </div>
+                </li>
+                <li class="course">
+                    <div class="text-5">
+                        <div class="title">Computer Security</div>
+                        <div class="teacher">Khaled Barakat</div>
+                    </div>
+                    <div class="info-teacher">
+                        <div class="img-5"></div>
+                    </div>
+                    <div class="recents">
+                        <span>Due tommorow</span>
+                        <a href="">11:59 PM - Assignment(2)</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <nav class="r-sidebar">
+        <div class="cal-container">
+            <header>
+                <p class="current-date">June 2024</p>
+                <div class="icons">
+                    <i class="fa fa-angle-left icon" aria-hidden="true"></i>
+                    <i class="fa fa-angle-right icon" aria-hidden="true"></i>
+                </div>
+            </header>
+            <div class="calender">
+                <ul class="weeks">
+                    <li>Sun</li>
+                    <li>Mon</li>
+                    <li>Tue</li>
+                    <li>Wed</li>
+                    <li>Thu</li>
+                    <li>Fri</li>
+                    <li>Sat</li>
+                </ul>
+                <ul class="days">
+                    <li class="inactive">28</li>
+                    <li class="inactive">29</li>
+                    <li class="inactive">30</li>
+                    <li class="inactive">31</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>12</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li class="active">30</li>
+                    <li class="inactive">1</li>
+                </ul>
+            </div>
+        </div>
+        <div class="additional-features">
+            <div class="join-classes">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </div>
+            <div class="archived=-classes">
+                <i class="fa fa-archive" aria-hidden="true"></i>
+            </div>
+            <div class="to-do">
+                <i class="fa fa-check-square-o" aria-hidden="true"></i>
+            </div>
+        </div>
+    </nav>
+    <script src="./dashBoard.js"></script>
+</body>
+
+</html>

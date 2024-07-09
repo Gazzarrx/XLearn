@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Profile.css">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Profile</title>
+</head>
+
+<body>
+    <nav class="sidebar">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <div class="img"></div>
+                </span>
+                <div class="text header-text">
+                    <span class="name">Mariem hazem</span>
+                    <span class="profession">Student</span>
+                </div>
+            </div>
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="searchbox">
+                    <a href="#">
+                        <i class='bx bx-search-alt-2 icon'></i>
+                        <input type="search" placeholder="Search...">
+                    </a>
+                </li>
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="./studentDashboard.html">
+                            <i class='bx bx-home-alt icon'></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="./profile.html" class="active">
+                            <i class='bx bx-user-circle icon'></i>
+                            <span class="text nav-text">Profile</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-book-bookmark icon'></i>
+                            <span class="text nav-text">Courses</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-briefcase-alt-2 icon'></i>
+                            <span class="text nav-text">Quizez</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-face icon'></i>
+                            <span class="text nav-text">Students</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom-content">
+                <li class="nav-link">
+                    <a href="./login.html">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+                <li class="mode">
+                    <div class="moon-sun">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark Mode</span>
+                    <div class="toggle-switch">
+                        <span class="switch">
+
+                        </span>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </nav>
+    <div class="profile-container">
+        <div class="container">
+            <div class="img-container">
+                <div class="img"></div>
+            </div>
+            <div class="username-container">
+                <p class="username">Mariem hazem</p>
+                <p class="proffession">Student</p>
+            </div>
+            <div class="logo-container">
+                <p>XLearn</p>
+            </div>
+        </div>
+        <div class="location-email-container">
+                <i class='bx bx-current-location icon'></i>
+                <p>New Cairo, Cairo, Egypt</p>
+                <i class='bx bxs-envelope' ></i>
+                <a href="https://mail.google.com/" class="email">mohamedf@cic-cairo.com</a>
+        </div>
+        <div class="buttons-container">
+            <a href="#change-pass"><button class="button-1">Change Password</button></a>
+            <a href="#remove-acc"><button class="button-2">Remove Account</button></a>
+        </div>
+    </div>
+    <script src="./dashBoard.js"></script>
+</body>
+
+</html>
